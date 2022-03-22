@@ -1,56 +1,29 @@
-a.	create table dept(id int,name varchar(20),hod varchar(20));
-	Table created
-	create table emp(id int, name varchar(20),dept int, salary decimal);
-	Table created
+create table students(roll int, name varchar(30),course varchar(10),year int);
 
-b.	insert into dept values(1,'D1','Rahul');
-	insert into dept values(2,'D2','Mathew');
-	insert into dept values(3,'D3','Ravi');
-	insert into dept values(4,'D4','Ejjas');
-	insert into dept values(5,'D5','John');
-	5 row created
+alter table students add primary key(roll);
 
+SQL> insert into students values(2,'athul','mca',2021);
 
-	insert into emp values(1, 'Eldo', '1', 50000);
-	insert into emp values(2, 'Bibi', '2', 40000);
-	insert into emp values(3, 'Raju', '3', 60000);
-	insert into emp values(5, 'Fasil', '4', 30000);
-	insert into emp values(4, 'Anit', '5', 10000);
-	5 row created
+1 row created.
 
-c.	alter table dept add primary key(id);
-    Table altered
-	alter table emp add primary key(id),foreign key(dept) references dept(id);
-	Table altered
+SQL> insert into students values(3,'ben','mca',2021);
 
-d.display
-	select * from emp;
-		    ID NAME                       DEPT     SALARY
-	---------- -------------------- ---------- ----------
-	         1 Eldo                          1      50000
-	         2 Bibi                          2      40000
-	         3 Raju                          3      60000
-	         5 Fasil                         4      30000
-	         4 Anit                          3      10000
+1 row created.
 
-	select * from dept;
-		    ID NAME                 HOD
-	---------- -------------------- --------------------
-	         1 D1                   Rahul
-	         2 D2                   Mathew
-	         4 D4                   Ejjas
-	         3 D3                   Ravi
+SQL> insert into students values(4,'eldose','mca',2021);
 
-e.update
-	update emp set salary = salary + 10000;
-	5 rows updated 
+1 row created.
 
-	update dept set hod = 'Ben Basil' where id=3; 
-	1 row updated 
+SQL> insert into students values(5,'fasil','mca',2021);
 
-f.delete
-	delete from emp where id = 5;
-	1 row deleted
+1 row created.
 
-	delete from dept where id = 4;
-	1 row deleted
+SQL> select * from students;
+
+      ROLL NAME                           COURSE           YEAR
+---------- ------------------------------ ---------- ----------
+         1 anit                           mca             2021
+         2 athul                          mca              2021
+         3 ben                            mca              2021
+         4 eldose                         mca              2021
+         5 fasil                          mca              2021
