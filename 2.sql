@@ -1,3 +1,5 @@
+date 22-03-22
+
 a.	create table dept(id int,name varchar(20),hod varchar(20));
 	Table created
 	create table emp(id int, name varchar(20),dept int, salary decimal);
@@ -25,7 +27,7 @@ c.	alter table dept add primary key(id);
 
 d.display
 	select * from emp;
-		    ID NAME                       DEPT     SALARY
+		ID NAME                       DEPT     SALARY
 	---------- -------------------- ---------- ----------
 	         1 Eldo                          1      50000
 	         2 Bibi                          2      40000
@@ -34,7 +36,7 @@ d.display
 	         4 Anit                          3      10000
 
 	select * from dept;
-		    ID NAME                 HOD
+		ID NAME                 HOD
 	---------- -------------------- --------------------
 	         1 D1                   Rahul
 	         2 D2                   Mathew
