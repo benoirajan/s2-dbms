@@ -1,4 +1,4 @@
-//date 22-03-22
+date 22-03-22
 
 a.	create table dept(id int,name varchar(20),hod varchar(20));
 	Table created
