@@ -1,4 +1,4 @@
-24.03.22 - THU
+24.03.22 - THUi
 
 Create a table and execute TCL statement
 (commit, rollback, savepoint)
